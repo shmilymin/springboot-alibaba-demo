@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      server-addr: 192.168.168.150:8848
