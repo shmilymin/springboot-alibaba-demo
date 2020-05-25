@@ -1,14 +1,21 @@
 package com.mm.common.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Data
-public class UserEntity implements Serializable {
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserEntity {
 
     private Long id;
     private String name;
-    private Date dt;
+    private LocalTime time;
+    private LocalDate date;
+    private LocalDateTime dataTime;
 }
